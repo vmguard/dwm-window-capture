@@ -27,4 +27,5 @@ May capture some protected windows
 
 ### Why?
 Just wanted to learn more about Clean D3D11 usage and 
-windows internals
+windows internals. Also have been putting off finishing
+this project for a while, wanted to get it done.
