@@ -3,18 +3,18 @@ A small window utility that captures the currently focused window using
 Direct3D 11 and DWM redirection surfaces, then save it as a png.
 
 ### What it does
-Captures gpu accelerated windows without BitBlt
-Uses DWM redirection surfaces
-Copies shared surface to a staging texture
-Reads back pixels to CPU
-Encodes to PNG with WIC
+ - Captures gpu accelerated windows without BitBlt
+ - Uses DWM redirection surfaces
+ - Copies shared surface to a staging texture
+ - Reads back pixels to CPU
+ - Encodes to PNG with WIC
 
 ### Requirements
-Windows
-Visual studio + windows SDK
-Direct3D 11
-C++17 or later
-Only tested on windows 10 22h2
+ - Windows
+ - Visual studio + windows SDK
+ - Direct3D 11
+ - C++17 or later
+ - Only tested on windows 10 22h2
 
 ### Usage
 Run the exe, press Alt + Insert to capture
