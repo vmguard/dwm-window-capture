@@ -21,9 +21,9 @@ Run the exe, press Alt + Insert to capture
 The image will be stored in the working directory in png format
 
 ### Notes/warnings
-Uses undocument DWM exports
-May break on newer windows versions
-May capture some protected windows
+ - Uses undocument DWM exports
+ - May break on newer windows versions
+ - May capture some protected windows
 
 ### Why?
 Just wanted to learn more about Clean D3D11 usage and 
