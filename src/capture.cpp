@@ -105,7 +105,7 @@ CaptureResult WindowCapturer::Capture(HWND hwnd) {
     D3D11_MAPPED_SUBRESOURCE mapped;
     HR_CHECK(d3d_.Context()->Map(staging.Get(), 0, D3D11_MAP_READ, 0, &mapped), "Texture map failed");
 
-    ScopedMap unmap(d3d_.Context(), staging.Get()); // Safety first
+    ScopedMap unmap(d3d_.Context(), staging.Get()); 
 
     CaptureResult result;
     result.width = desc.Width;
