@@ -12,7 +12,6 @@
 
 using Microsoft::WRL::ComPtr;
 
-// DWM Undocumented Constants
 static constexpr DWORD DWM_REDIRECTION_GDI = 0x10;
 static constexpr HRESULT S_DWM_SURFACE_AVAILABLE = (HRESULT)0x00263005;
 
@@ -37,7 +36,7 @@ public:
     ID3D11Device* Device() const { return device_.Get(); }
     ID3D11DeviceContext* Context() const { return context_.Get(); }
     LUID AdapterLuid() const { return luid_; }
-    // D3DContext manages the singleton-like lifecycle of the GPU device.
+    // D3DContext manages the singleton like lifecycle of the GPU device.
     // We delete copy/assignment to prevent accidental reference count spikes or resource leaks across threads.
     D3DContext(const D3DContext&) = delete;
     D3DContext& operator=(const D3DContext&) = delete;
