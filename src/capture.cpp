@@ -6,7 +6,7 @@
 
 #define HR_CHECK(hr, msg) if (FAILED(hr)) { throw std::runtime_error(msg); }
 
-// RAII helper for D3D11 Mappings
+
 struct ScopedMap {
     ID3D11DeviceContext* ctx;
     ID3D11Resource* res;
